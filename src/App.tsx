@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import FeaturedMountains from "./components/FeaturedMountains";
-import MountainMap from "./components/MountainMap";
+import InteractiveMountainMap from "./components/InteractiveMountainMap";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
@@ -20,27 +20,21 @@ function App() {
 
   return (
     <main className="bg-black text-white">
-      {/* Navbar */}
       <Navbar />
 
-      {/* Hero */}
       <Hero
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
       />
 
-      {/* Featured Mountains */}
       <FeaturedMountains
         mountains={filteredMountains}
       />
 
-      {/* Mountain Map */}
-      <MountainMap />
+      <InteractiveMountainMap />
 
-      {/* About */}
       <About />
 
-      {/* Footer */}
       <Footer />
     </main>
   );
